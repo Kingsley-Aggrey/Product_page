@@ -31,8 +31,8 @@ All the screenshots of the project can be found in the screenShot directory
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Kingsley-Aggrey/Product_page)
+- Live Site URL: [Add live site URL here](https://productpagefm.netlify.app/)
 
 ## My process
 
@@ -46,4 +46,4 @@ All the screenshots of the project can be found in the screenShot directory
 
 ### Useful resources
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Kingsley-Aggrey](https://www.frontendmentor.io/profile/Kingsley-Aggrey)
