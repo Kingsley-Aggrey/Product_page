@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav>
+      <div class="links">
+        <img src="images/icon-menu.svg" alt="menu" class="mobile-menu-toggler" onclick="ToggleMobileMenu()">
+        <img src="images/logo.svg" alt="logo" class="logo">
+
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-container hide">
+          <div class="mobile-menu">
+            <img src="./images/icon-close.svg" onclick="ToggleMobileMenu()" alt="closeBtn" >
+            <a href="#" onclick="ToggleMobileMenu()">Collections</a>
+            <a href="#" onclick="ToggleMobileMenu()">Men</a>
+            <a href="#" onclick="ToggleMobileMenu()">Women</a>
+            <a href="#" onclick="ToggleMobileMenu()">About</a>
+            <a href="#" onclick="ToggleMobileMenu()">Contact</a>
+          </div>
+        </div>
+
+        <!-- Desktop menus Links -->
+        <div class="menu">
+          <button id="b1"><a href="" id="a1">Collections</a></button>
+          <button id="b2"><a href="" id="a2">Men</a></button>
+          <button id="b3"><a href="" id="a3">Women</a></button>
+          <button id="b4"><a href="" id="a4">About</a></button>
+          <button id="b5"><a href="" id="a5">Contact</a></button>
+        </div>
+      </div>
+
+      <!-- Profile And Cart -->
+      <div class="prof-cart">
+        <img src="images/icon-cart.svg" onclick="ToggleCart()" alt="cart" class="cart">
+  <span class="qq hide">1</span>
+        <img src="images/image-avatar.png" onclick="ToggleCart()" alt="profile">
+        <div class="basket hide">
+          <h4>Cart</h4>
+          <div class="conts">
+            <p>Your Cart is empty</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product display Content -->
+    <div class="content">
+
+      <!-- Product Images preview -->
+      <div class="images">
+        <div class="image-previewer">
+          <button class="mob prev">
+            <img src="images/icon-previous.svg" alt="previous" onclick="ViewPrevious()">
+          </button>
+          <img src="images/image-product-1.jpg" alt="image" class="productImage">
+          <button class="mob next">
+            <img src="images/icon-next.svg" alt="next" onclick="ViewNext()">
+          </button>
+        </div>
+        <div class="des-images">
+          <img src="images/image-product-1.jpg" alt="img1" class="image selected" >
+          <img src="images/image-product-2.jpg" alt="img2" class="image">
+          <img src="images/image-product-3.jpg" alt="img3" class="image">
+          <img src="images/image-product-4.jpg" alt="img4" class="image">
+        </div>
+      </div>
+
+
+      <!-- Product Details -->
+      <div class="product-info">
+        <h5 class="company">
+          Sneaker Company
+        </h5>
+        <h2 class="product-name">
+          Fall Limited Edition Sneakers
+        </h2>
+        <p class="details">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+  
+        <div class="price">
+          <div class="new-dis">
+            <p class="new">$125.00</p>
+            <p class="dis">50%</p>
+          </div>
+  
+          <p class="old">
+            $250.00
+          </p>
+        </div>
+  
+        <div class="actions">
+          <div class="quantity">
+            <button class="minus">
+              <img src="images/icon-minus.svg" alt="minus" onclick="DecreaseQuantity()">
+            </button>
+            <p class="quan">1</p>
+            <button class="plus">
+              <img src="images/icon-plus.svg" alt="plus" onclick="increaseQuantity()">
+            </button>
+          </div>
+          <button class="addToCart" onclick="AddToCart()">
+            <img src="images/icon-cart.svg" alt="i">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kingsley Aggrey Fynn</a>.
+    </div>
+    <div class="imgs hide">
+      <div class="img_con">
+        <img src="./images/icon-close.svg" class="close">
+        <div class="img-previewer">
+          <button class="prev">
+            <img src="images/icon-previous.svg" alt="previous" onclick="ThumbNailPrevious()">
+          </button>
+          <img src="images/image-product-1.jpg" alt="image" class="productImage" id="img">
+          <button class="next">
+            <img src="images/icon-next.svg" alt="next" onclick="ThumbNailViewNext()">
+          </button>
+        </div>
+
+        <!--  -->
+        <div class="desimgs">
+          <img src="images/image-product-1.jpg" alt="img1" class="image_ selected" >
+          <img src="images/image-product-2.jpg" alt="img2" class="image_">
+          <img src="images/image-product-3.jpg" alt="img3" class="image_">
+          <img src="images/image-product-4.jpg" alt="img4" class="image_">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
